@@ -1,0 +1,14 @@
+name: "Publish package"
+
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  publish:
+    name: "bump version"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: "Checkout source code"
+        uses: "sthuck/version-tagger@v2"
