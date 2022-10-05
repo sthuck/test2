@@ -11,4 +11,4 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: "Checkout source code"
-        uses: "sthuck/version-tagger@v2"
+        uses: "sthuck/version-tagger@v1"
